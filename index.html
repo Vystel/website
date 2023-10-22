@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mystifyre</title>
+  <link rel="shortcut icon" type="image/x-icon" href="mystifyre/logo.ico">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+    body {
+      margin: 0;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .background img {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .container {
+      width: 800px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: left;
+      text-align: left;
+      padding: 20px;
+      color: #ca9afe;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .separator {
+      width: 800px;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      width: 167px;
+      height: 167px;
+    }
+
+    .pfp {
+      width: 250px;
+      height: 250px;
+      border-radius: 20px;
+    }
+
+    .header {
+      font-size: 24px;
+      margin-top: 10px;
+    }
+
+    .text {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: 600;
+      font-family: 'Roboto Condensed', sans-serif;
+      color: #ca9afe;
+    }
+
+    .container>img {
+      margin-right: 40px;
+    }
+
+    .buttons-container {
+      width: 900px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .button {
+      display: block;
+      margin: 40px;
+      width: 120px;
+      height: 120px;
+      color: #ca9afe;
+      border: 5px solid;
+      border-radius: 20px;
+      background-color: rgba(0, 0, 0, 100);
+      transition: all 0.2s ease-in-out;
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    .button:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+      background-color: rgba(0, 0, 0, 0.75);
+      filter: drop-shadow(0px 0px 5px #ca9afe);
+    }
+
+    .button img {
+      display: block;
+      margin: 0 auto;
+      margin-top: 12px;
+      max-width: 80%;
+      max-height: 80%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="mystifyre/logo.png" alt="Logo" class="logo">
+    <img src="mystifyre/text.png" alt="Text">
+  </div>
+
+  <div class="container">
+    <img src="mystifyre/pfp.png" alt="Profile Picture" class="pfp">
+    <p class="text">Hey there, and a warm welcome to my little corner of the web! You can call me Myst, I'm just an
+      amateur EDM / VGM composer using FL Studio to create some tunes. I usually compose either electronic dance music
+      (EDM) or video game music (VGM), but you know what, I'm always up for a bit of musical experimentation, so I like
+      to try out other genres from time to time. Feel free to listen to my music or contact me through the social media
+      links below!</p>
+  </div>
+
+  <div class="separator" alt="separator">
+    <img src="mystifyre/separator.png">
+  </div>
+
+  <div class="buttons-container">
+    <a href="https://www.youtube.com/@Mystifyre" class="button button-youtube" target="_blank"
+      title="Visit my YouTube channel!">
+      <img src="logos/youtube.png" alt="YouTube logo">
+    </a>
+    <a href="https://soundcloud.com/mystifyre" class="button button-soundcloud" target="_blank"
+      title="My SoundCloud where I post all of my good tracks.">
+      <img src="logos/soundcloud.png" alt="Soundcloud logo">
+    </a>
+    <a href="https://mystifyre.newgrounds.com" class="button button-newgrounds" target="_blank"
+      title="Visit my Newgrounds profile!">
+      <img src="logos/newgrounds.png" alt="Newgrounds logo">
+    </a>
+    <a href="https://discordapp.com/users/429750104262705160/" class="button button-discord" target="_blank"
+      title="Add me on Discord. (Best way to contact me.)">
+      <img src="logos/discord.png" alt="Discord logo">
+    </a>
+    <a href="https://discord.gg/KrwxnbUqGj" class="button button-discordserver" target="_blank"
+      title="Join my Discord Server!">
+      <img src="logos/CosmicLounge.png" alt="Discord Server logo">
+    </a>
+    <a href="https://twitter.com/MystifyreMusic" class="button button-twitter" target="_blank"
+      title="My Twitter where I rarely post things.">
+      <img src="logos/twitter.png" alt="Twitter logo">
+    </a>
+    <a href="https://www.reddit.com/user/MystifyreMusic" class="button button-twitter" target="_blank"
+      title="My Reddit profile.">
+      <img src="logos/reddit.png" alt="Reddit logo">
+    </a>
+    <a href="https://steamcommunity.com/id/MystifyreMusic/" class="button button-steam" target="_blank"
+      title="Add me on Steam if I know you.">
+      <img src="logos/steam.png" alt="Steam logo">
+    </a>
+    <a href="https://github.com/MystifyreMusic" class="button button-github" target="_blank"
+      title="Not really worth checking out, but I use this for game development collabs.">
+      <img src="logos/github.png" alt="GitHub logo">
+    </a>
+    <a href="https://replit.com/@Mystifyre" class="button button-replit" target="_blank"
+      title="Where I program all of my websites.">
+      <img src="logos/replit.png" alt="GitHub logo">
+    </a>
+    <a href="https://www.chess.com/member/mystifyre" class="button button-chess" target="_blank"
+      title="My Chess.com account so you can see how shitty I am lol.">
+      <img src="logos/chess.png" alt="Chess.com logo">
+    </a>
+  </div>
+
+  <div class="separator" alt="separator">
+    <img src="mystifyre/separator.png">
+  </div>
+
+  <iframe width="800" height="500" src="https://www.youtube.com/embed/gFiT-gZGwRg" frameborder="0"
+    allowfullscreen></iframe>
+
+  <div class="separator" alt="separator">
+    <img src="mystifyre/separator.png">
+  </div>
+
+  <iframe width="800" height="300" scrolling="no" frameborder="no" allow="autoplay"
+    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1527731584&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+  <div
+    style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+    <a href="https://soundcloud.com/mystifyre" title="Mystifyre" target="_blank"
+      style="color: #cccccc; text-decoration: none;">Mystifyre</a> · <a
+      href="https://soundcloud.com/mystifyre/exploring-the-universe" title="Exploring The Universe" target="_blank"
+      style="color: #cccccc; text-decoration: none;">Exploring The Universe</a>
+  </div>
+
+  <div class="separator" alt="separator">
+    <img src="mystifyre/separator.png">
+  </div>
+
+  <div class="background">
+    <img src="mystifyre/background.png" alt="Background">
+  </div>
+</body>
+
+</html>

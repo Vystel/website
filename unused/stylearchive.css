@@ -1,0 +1,75 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+body, button {
+  font-family: 'Abel', sans-serif;
+}
+
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.text-container {
+  color: #ca9afe;
+  padding: 20px;
+  text-align: center;
+}
+
+.header-image {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.header-bg {
+  width: 100vw;
+  height: 35vw;
+}
+
+.header-image img {
+  display: block;
+  margin: 0 auto;
+}
+
+.header-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20vw;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0vw;
+}
+
+.button {
+  display: block;
+  margin: 40px;
+  width: 120px;
+  height: 120px;
+  border: 10px solid;
+  border-image: linear-gradient(to top, #0f0f0f, #ca9afe) 1;
+  background-color: rgba(0,0,0,100);
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 0px 0.5vw 0px rgba(0, 0, 0, 0.75);
+}
+
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 0.5vw 0px rgba(0, 0, 0, 0.75);
+  background-color: rgba(0,0,0,0.75);
+  filter: drop-shadow(0px 0px 0.5vw #ca9afe);
+}
+
+.button img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+}

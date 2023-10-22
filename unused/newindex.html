@@ -1,0 +1,244 @@
+<html>
+
+<head>
+  <meta name="theme-color" content="#ff8000">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135255146-1"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+  <script type="text/javascript" src="./portfolio.js" charset="UTF-8"></script>
+  <script type="text/javascript" src="./art.js?v=1" charset="UTF-8"></script>
+  <script>window.dataLayer = window.dataLayer || []; function gtag() {dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-135255146-1');</script>
+  <title>GD Colon</title>
+  <link href="newstyle.css" type="text/css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="GD Colon">
+  <meta property="og:description" content="Entertainer, programmer, punctuation, kitsune.">
+  <meta property="og:type" content="website">
+  <meta name="og:image" itemprop="image" content="https://gdcolon.com/assets/fumo.png">
+  <link rel="icon" href="./assets/tails/fluff.png">
+  </link>
+</head>
+
+<body style="text-align: center">
+
+  <div class="box nameBox" style="margin-top: 45px">
+    <div>
+      <h1>Nexus</h1>
+      <p style="color: #ff8000; margin-top: 3px; font-size: 18px">Musician</p>
+    </div> 
+
+    <div class="socialList">
+      <div class="socials">
+        <a title="YouTube" target="_blank" href="https://youtube.com/gdcolon"><img class="socialIcon"
+            src="./assets/social/youtube.svg" alt="YouTube"></a>
+        <a title="Twitter" target="_blank" href="https://twitter.com/TheRealGDColon"><img class="socialIcon"
+            src="./assets/social/twitter.svg" alt="Twitter"></a>
+        <a title="GitHub" target="_blank" href="https://github.com/GDColon"><img class="socialIcon"
+            src="./assets/social/github.svg" alt="GitHub"></a>
+
+        <img title="Extra links" id="extraSocialIcon" class="socialIcon viewMore" src="./assets/more.svg"
+          data-off="more.svg" data-on="arrow.svg" style="height: 32px; width: 32px">
+      </div>
+
+      <div id="extraSocials" class="socials extraSocials" style="margin-top: 28px; display: none">
+        <a title="Itch" target="_blank" href="https://gdcolon.itch.io/"><img class="socialIcon"
+            src="./assets/social/itch.svg" alt="Itch"></a>
+        <a title="Twitch" target="_blank" href="https://www.twitch.tv/gdcolon"><img class="socialIcon"
+            src="./assets/social/twitch.svg" alt="Twitch"></a>
+        <a title="Steam" target="_blank" href="https://steamcommunity.com/id/gdcolon/"><img class="socialIcon"
+            src="./assets/social/steam.svg" alt="Steam"></a>
+        <!-- <a title="Tumblr" target="_blank" href="https://www.tumblr.com/therealgdcolon"><img class="socialIcon" src="./assets/social/tumblr.svg" alt="Tumblr"></a> -->
+        <!-- <a title="TikTok" target="_blank" href="https://www.tiktok.com/@gdcolon"><img class="socialIcon" src="./assets/social/tiktok.svg" alt="TikTok"></a> -->
+      </div>
+    </div>
+
+  </div>
+
+  <div class="box nameBox">
+    <p style="line-height: 38px; font-weight: bold; max-width: 420px; margin: 20 auto; font-size: 30px;">Hi, my
+      name is Nexus and I make music.</p>
+    <img class="spinOnHover" id="fullbody" alt="Fox boy" src="Nexus Reference.png" style="width: 375px">
+  </div>
+
+  <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center">
+    <div class="box" style="width: 600px; margin: 0px 0px 30px 0px">
+      <h2>Thirty Dollar Website</h2>
+      <p class="small">the site's pretty popular, here's a convenient shortcut to it</p>
+      <a class="linkButton" href="https://thirtydollar.website"><button tabindex="-1"
+          style="font-weight: bold; font-size: 20px; height: 69px; width: 350px; padding: 0 0; background-color: rgb(128, 100, 180)">🗿
+          DON'T YOU LECTURE ME 🗿</button></a>
+    </div>
+
+    <div class="box" style="width: 600px; margin: 0px 0px 30px 0px">
+      <h2>I made a game!!!</h2>
+      <p class="small">Go check it out here!</p>
+      <a class="linkButton" href="https://gdcolon.itch.io/treacheroustrials"><button tabindex="-1"
+          style="font-weight: bold; font-size: 20px; height: 69px; width: 275px; padding: 0 0; background-color: #ff2222">🔥
+          Treacherous Trials 🔥</button></a>
+    </div>
+  </div>
+
+  <div class="box" id="videos">
+    <h2>Videos!</h2>
+    <div id="playlists" class="sidescroll" style="margin: 0 12">
+      <div class="videoBox uwu" caption="Stream VODs" playlist="PLivEE7I7krsqoBJ3d_TlfFy_Cp6g_D9WK"></div>
+      <div class="videoBox" caption="My best videos" playlist="PLivEE7I7krsogHWu1uW38fADewuUj-c60"></div>
+      <div class="videoBox" caption="Programming" playlist="PLivEE7I7krso_lA6BQu2nknljc44DDS9R"></div>
+    </div>
+  </div>
+
+  <div class="box" id="projects">
+    <h2>Cool things I've made!</h2>
+    <button bg="128,64,0" id="featured" type="featured" class="tab selected">Featured</button>
+    <!--
+   --><button bg="0,128,0" type="site" class="tab">Websites</button>
+    <!--
+   --><button bg="128,0,0" type="program" class="tab">Programs</button>
+    <!--
+   --><button bg="128,128,0" type="gd" class="tab">Geometry Dash</button>
+    <!--
+   --><button bg="128,0,128" type="rd" class="tab">Rhythm Doctor</button>
+    <!--
+    --><br><br>
+    <div id="portfolio"></div>
+    <br>
+  </div>
+
+  <div class="box uwu" id="art">
+    <h2 style="margin-bottom: 16px">Art!</h2>
+    <button class="tabScale" onclick="event.preventDefault(); chooseArt()"
+      oncontextmenu="event.preventDefault(); chooseArt(-1)" id="loadArt"
+      style="margin-bottom: 30px; background-color: #ff8000; font-weight: bold;" msg="Next!"></button><br>
+  </div>
+
+  <div class="box" style="margin-top: 20px; margin-bottom: 0px;">
+    <p class="small" style="margin: 10 0 15 0">Reach me here:</p>
+    <a class="linkButton" href="https://twitter.com/messages/compose?recipient_id=833838358996611073"><button
+        tabindex="-1" style="width: 150px; background-color: #1DA1F2">Twitter DMs</button></a>
+    <!--
+   --><button class="tabScale" id="showEmail" style="width: 150px; background-color: #696969">Email</button>
+    <p class="small" id="myEmail" style="font-size: 16px; margin-top: 10px; margin-bottom: 0px"></p>
+  </div>
+
+  <div class="smallCredits" style="margin-bottom: 10px; opacity: 33%">
+    <p class="small" style="font-size: 14px">Background art by <a style="color: white !important" target="_blank"
+        href="https://twitter.com/NetBa_Art">NetBa</a></p>
+  </div>
+
+  </div>
+</body>
+
+</html>
+
+<script>
+
+  function shuffle(a) {for (let i = a.length - 1; i > 0; i--) {const j = Math.floor(Math.random() * (i + 1));[a[i], a[j]] = [a[j], a[i]]} return a;}
+  function choose(arr) {return arr[Math.floor(Math.random() * arr.length)]}
+
+  let mobile = (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))
+  // if (mobile) {
+  //    $('p').css("font-size", "20px")
+  //    $('.nameBox').css("width", "750px").css("flex-direction", "column")
+  //    $('.socialIcon').css("height", "40px")
+  //    $('.box').css("width", "96%").css("padding", "5 5")
+  // }
+
+  function brighten(col) {
+    return col.replace(/128/g, "255").replace(/64/g, "128")
+  }
+
+  function colorTabs() {
+    $('.tab').each(function () {
+      let tab = $(this)
+      let tabBG = tab.attr('bg')
+      if (tab.hasClass('selected')) tab.css('background-color', `rgba(${brighten(tabBG)}, 0.75)`)
+      else tab.css('background-color', `rgba(${tabBG}, 0.5)`)
+    })
+  }
+
+  // create video playlists
+  $('.videoBox').each(function () {
+    let playlist = $(this)
+    $(this).append(`<a target="_blank" href="https://www.youtube.com/playlist?list=${playlist.attr('playlist')}"><p style="color: aqua"; class="small">${playlist.attr('caption')}</p></a>
+   <iframe src="https://www.youtube.com/embed/videoseries?list=${playlist.attr('playlist')}" frameborder="1"
+   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="ytlink"></iframe>`)
+  })
+
+  let playlists = $('#playlists')
+  playlists.scrollLeft((playlists[0].scrollWidth - playlists.width()) / 2)
+
+  $(document).on('click', '.tab', function () {
+    if (!Array.isArray(portfolio)) return
+    $("#portfolio").html("")
+    let type = $(this).attr('type')
+    $(".tab").removeClass("selected")
+    $(this).addClass("selected")
+    colorTabs()
+    let stuff = (type == "featured") ? portfolio.filter(x => x.featured) : portfolio.filter(x => x.type == type).sort((a, b) => a.name.localeCompare(b.name))
+    stuff.forEach(x => $("#portfolio").append(`<a class="thingLink${mobile ? " mobile" : ""}" target="_blank" href="${x.link}">
+         <div tabindex=-1 class="thing" style="background-color: rgba(${($('.selected').attr('bg'))}, 0.75)">
+         <p${!mobile && x.titleSize ? ` style="font-size: ${x.titleSize}px"` : ""} class="thingTitle"><img src="portfolio/${x.icon || "none"}.png">${x.name.replace(/^\*/, "")}</p>
+         <p class="thingInfo smaller">${x.description}</p>
+      </div></a>`))
+  })
+
+  $(document).on('focus', '.thing', function () {
+    $(this).parent('a').focus()
+  })
+
+  $("#featured").trigger('click')
+
+  let extras = $('#extraSocials')
+  let extrasIcon = $('#extraSocialIcon')
+  extrasIcon.click(function () {
+    extras.toggle()
+    let visible = extras.is(":visible")
+    extrasIcon.attr("src", `./assets/${extrasIcon.attr(visible ? "data-on" : "data-off")}`)
+  })
+
+  if (typeof artStuff != "object") artStuff = {}
+  let artPool = shuffle(artStuff.art || [])
+  let artIndex = -1
+
+  function chooseArt(step) {
+    if (!artPool.length) return
+    $('.randomArt').remove()
+    $('#loadArt').text($('#loadArt').attr('msg'))
+    //artIndex += mobile ? 1 : 2
+    step ? (artIndex += step) : (artIndex++)
+    if (artIndex < 0) artIndex = artPool.length
+    let selectedArt = [artPool[artIndex % artPool.length]]
+    //if (!mobile) selectedArt.push(artPool[(artIndex + 1) % artPool.length])
+    selectedArt.forEach(x => {
+      let artistLink = (artStuff.artists).find(y => x.artist == y.name)
+      $("#art").append(`<div class="randomArt">
+            <a class="fanartLink" href="./art/${x.filename}" target="_blank" title="${x.hover}">
+               <img src="./art/${x.filename}" class="fanart ${x.class || ""}" height="${mobile ? 250 : 400}px"${mobile ? ` title="${x.hover}"` : ""}>
+            </a>
+            <p style="margin-bottom: 0px">${x.type || "Fanart"} from <a ${artistLink ? `href="${artistLink.link}" target="_blank"` : ""}>${x.artist}</a></p>
+            <p style="margin: 15px auto 0px auto; height: 60px;" class="small"><i>${x.description}</i></p>
+         </div>`)
+    })
+  }
+
+  $(document).on('click', '.nsfw', function (e) {
+    $(this).removeClass('nsfw')
+    e.preventDefault()
+  })
+
+  let neatPool = ['Have fun', 'Neat', 'Whoa', 'Nice', 'Cool', 'Sure', 'Why not', 'Sweet', 'Funky', 'Zoinks']
+  $('#showEmail').click(function () {
+    if ($('#myEmail').text()) $('#myEmail').text("")
+    else $('#myEmail').text(`My email is therealgdcolon[at]gmail.com. ${choose(neatPool)}!`)
+  })
+
+  if (window.location.search.match(/(&|\?)srs/)) {
+    $('#fullbody').attr('src', "./assets/javiwave.png").removeClass('flipOnHover')
+    $('#kitsuneh').text("and more")
+    $('.uwu').hide()
+  }
+  else if (window.location.search.match(/(&|\?)noart/)) $('#art').hide()
+  else if (!mobile) chooseArt()
+  else $('#loadArt').text("Load!")
+
+</script>
