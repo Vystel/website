@@ -121,6 +121,64 @@
       max-width: 80%;
       max-height: 80%;
     }
+
+    .coming-soon {
+        background-color: transparent;
+        padding: 0px;
+        margin: -5px 0;
+    }
+
+    .header {
+        color: #ca9afe;
+        font-size: 24px;
+        text-align: center;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .track-name {
+        color: #ca9afe;
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .coming-soon p {
+        text-align: center;
+    }
+
+    audio {
+        display: block;
+        margin: 10px auto;
+        background-color: #000; /* Set the background color of the audio element to black */
+        border: 5px solid #ca9afe; /* Set the outline color to #ca9afe */
+        border-radius: 30px;
+        padding: 5px;
+    }
+
+    audio::-webkit-media-controls-enclosure {
+      border-radius: 5px;
+      background-color: #000;
+    }
+
+    audio::-webkit-media-controls-play-button, audio::-webkit-media-controls-mute-button {
+        background-color: #ca9afe;
+        color: #fff;
+        border-radius: 50%;
+        padding: 5px;
+    }
+
+    audio::-webkit-media-controls-current-time-display, audio::-webkit-media-controls-time-remaining-display, audio::-webkit-media-controls-timeline {
+      color:#ca9afe;
+    }
+
+    .track {
+      padding: 5px;
+    }
+
+    audio::-webkit-media-controls-timeline {
+      color: #ca9afe;
+    }
+
   </style>
 </head>
 
@@ -191,8 +249,48 @@
     <img src="mystifyre/separator.png">
   </div>
 
+  <div>
+    <h2 class="header">Coming Soon</h2>
+    <p class="text">Stay tuned for some exciting new music coming your way! Here's a sneak peek of what's in store:</p>
+  </div>
+
+  <div class="coming-soon">
+    <div class="track">
+        <h2 class="track-name">RFYL Remix (Remastered)</h2>
+        <audio controls>
+            <source src="audio/RFYL Remix Remastered.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div class="track">
+        <h2 class="track-name">Jump City (Remastered)</h2>
+        <audio controls>
+            <source src="audio/Jump City Remastered.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div class="track">
+        <h2 class="track-name">Mystic Ignition</h2>
+        <audio controls>
+            <source src="audio/Mystic Ignition.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div class="track">
+        <h2 class="track-name">Musical Prayer</h2>
+        <audio controls>
+            <source src="audio/Musical Prayer.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+  </div>
+
+  <div class="separator" alt="separator">
+    <img src="mystifyre/separator.png">
+  </div>
+
   <iframe width="800" height="500" src="https://www.youtube.com/embed/gFiT-gZGwRg" frameborder="0"
-    allowfullscreen></iframe>
+      allowfullscreen></iframe>
 
   <div class="separator" alt="separator">
     <img src="mystifyre/separator.png">
