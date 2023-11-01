@@ -1,325 +1,372 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Mystifyre</title>
+    <link href="mystifyre/logo.ico" rel="shortcut icon" type="image/x-icon"/>
+    <meta content="Mystifyre's Website" property="og:title"/>
+    <meta content="A personal web page for a musician named Mystifyre, featuring information about their music and links to various social media platforms." property="og:description"/>
+    <meta content="https://i.ibb.co/17Txqhy/7.png" property="og:image"/>
+    <meta content="https://mystifyremusic.github.io/website/" property="og:url"/>
+    <meta content="website" property="og:type"/>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
 
-<head>
-  <title>Mystifyre</title>
-  <link rel="shortcut icon" type="image/x-icon" href="mystifyre/logo.ico">
-  <meta property="og:title" content="Mystifyre's Website">
-  <meta property="og:description" content="A personal web page for a musician named Mystifyre, featuring information about their music and links to various social media platforms.">
-  <meta property="og:image" content="https://i.ibb.co/17Txqhy/7.png">
-  <meta property="og:url" content="https://mystifyremusic.github.io/website/">
-  <meta property="og:type" content="website">
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+      body {
+        margin: 0;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
 
-    body {
-      margin: 0;
-      background-color: #000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
+      .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
 
-    .background {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
+      .background img {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+      }
 
-    .background img {
-      position: relative;
-      display: inline-block;
-      overflow: hidden;
-      width: 100vw;
-      height: 100vh;
-    }
+      .container {
+        width: 800px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        text-align: left;
+        padding: 20px;
+        color: #ca9afe;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
 
-    .container {
-      width: 800px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: left;
-      text-align: left;
-      padding: 20px;
-      color: #ca9afe;
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
+      .separator {
+        width: 800px;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
 
-    .separator {
-      width: 800px;
-      align-items: center;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
+      .logo {
+        width: 167px;
+        height: 167px;
+      }
 
-    .logo {
-      width: 167px;
-      height: 167px;
-    }
+      .pfp {
+        width: 250px;
+        height: 250px;
+        border-radius: 20px;
+      }
 
-    .pfp {
-      width: 250px;
-      height: 250px;
-      border-radius: 20px;
-    }
+      .header {
+        font-size: 24px;
+        margin-top: 10px;
+      }
 
-    .header {
-      font-size: 24px;
-      margin-top: 10px;
-    }
+      .text {
+        margin-top: 20px;
+        font-size: 18px;
+        font-family: "Roboto Condensed", sans-serif;
+        color: #ca9afe;
+      }
 
-    .text {
-      margin-top: 20px;
-      font-size: 18px;
-      font-family: 'Roboto Condensed', sans-serif;
-      color: #ca9afe;
-    }
+      .container > img {
+        margin-right: 40px;
+      }
 
-    .container>img {
-      margin-right: 40px;
-    }
+      .buttons-container {
+        width: 900px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
 
-    .buttons-container {
-      width: 900px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      margin-top: 10px;
-    }
+      .button {
+        display: block;
+        margin: 40px;
+        width: 120px;
+        height: 120px;
+        color: #ca9afe;
+        border: 5px solid;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 100);
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+      }
 
-    .button {
-      display: block;
-      margin: 40px;
-      width: 120px;
-      height: 120px;
-      color: #ca9afe;
-      border: 5px solid;
-      border-radius: 20px;
-      background-color: rgba(0, 0, 0, 100);
-      transition: all 0.2s ease-in-out;
-      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    }
+      .button:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+        background-color: rgba(0, 0, 0, 0.75);
+        filter: drop-shadow(0px 0px 5px #ca9afe);
+      }
 
-    .button:hover {
-      transform: scale(1.1);
-      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-      background-color: rgba(0, 0, 0, 0.75);
-      filter: drop-shadow(0px 0px 5px #ca9afe);
-    }
+      .button img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 12px;
+        max-width: 80%;
+        max-height: 80%;
+      }
 
-    .button img {
-      display: block;
-      margin: 0 auto;
-      margin-top: 12px;
-      max-width: 80%;
-      max-height: 80%;
-    }
-
-    .coming-soon {
+      .coming-soon {
         background-color: transparent;
         padding: 0px;
         margin: -5px 0;
-    }
+      }
 
-    .header {
+      .header {
         color: #ca9afe;
         font-size: 24px;
         text-align: center;
-        font-family: 'Roboto Condensed', sans-serif;
-    }
+        font-family: "Roboto Condensed", sans-serif;
+      }
 
-    .track-name {
+      .track-name {
         color: #ca9afe;
         font-size: 20px;
         text-align: center;
-        font-family: 'Roboto Condensed', sans-serif;
-    }
+        font-family: "Roboto Condensed", sans-serif;
+      }
 
-    .coming-soon p {
+      .coming-soon p {
         text-align: center;
-    }
+      }
 
-    audio {
+      audio {
         display: block;
         margin: 10px auto;
-        background-color: #000; /* Set the background color of the audio element to black */
-        border: 5px solid #ca9afe; /* Set the outline color to #ca9afe */
+        background-color: #000;
+        border: 5px solid #ca9afe;
         border-radius: 30px;
         padding: 5px;
-    }
+      }
 
-    audio::-webkit-media-controls-enclosure {
-      border-radius: 5px;
-      background-color: #000;
-    }
+      audio::-webkit-media-controls-enclosure {
+        border-radius: 5px;
+        background-color: #000;
+      }
 
-    audio::-webkit-media-controls-play-button, audio::-webkit-media-controls-mute-button {
+      audio::-webkit-media-controls-play-button,
+      audio::-webkit-media-controls-mute-button {
         background-color: #ca9afe;
         color: #fff;
         border-radius: 50%;
         padding: 5px;
-    }
+      }
 
-    audio::-webkit-media-controls-current-time-display, audio::-webkit-media-controls-time-remaining-display, audio::-webkit-media-controls-timeline {
-      color:#ca9afe;
-    }
+      audio::-webkit-media-controls-current-time-display,
+      audio::-webkit-media-controls-time-remaining-display,
+      audio::-webkit-media-controls-timeline {
+        color: #ca9afe;
+      }
 
-    .track {
-      padding: 5px;
-    }
+      .track {
+        padding: 5px;
+      }
 
-    audio::-webkit-media-controls-timeline {
-      color: #ca9afe;
-    }
+      audio::-webkit-media-controls-timeline {
+        color: #ca9afe;
+      }
+    </style>
+  </head>
 
-  </style>
-</head>
+  <body>
+    <div class="container">
+      <img alt="Logo" class="logo" src="mystifyre/logo.png"/>
+      <img alt="Text" src="mystifyre/text.png"/>
+    </div>
+    <div class="container">
+      <img alt="Profile Picture" class="pfp" src="mystifyre/pfp.png"/>
+      <p class="text">
+        Hey there, and a warm welcome to my little corner of the web! You can
+        call me Myst, I'm just an amateur EDM / VGM composer using FL Studio to
+        create some tunes. I usually compose either electronic dance music (EDM)
+        or video game music (VGM), but you know what, I'm always up for a bit of
+        musical experimentation, so I like to try out other genres from time to
+        time. Additionally, if you're looking to create your own website, don't
+        hesitate to reach out to me, I can help you design and build one for
+        you. Whether if it's a tool or a website showcase your work or
+        interests, I got you. Feel free to check out my work or contact me
+        through the social media links below!
+      </p>
+    </div>
 
-<body>
-  <div class="container">
-    <img src="mystifyre/logo.png" alt="Logo" class="logo">
-    <img src="mystifyre/text.png" alt="Text">
-  </div>
+    <div alt="separator" class="separator"><img src="mystifyre/separator.png"/></div>
 
-  <div class="container">
-    <img src="mystifyre/pfp.png" alt="Profile Picture" class="pfp">
-    <p class="text">Hey there, and a warm welcome to my little corner of the web! You can call me Myst, I'm just an
-      amateur EDM / VGM composer using FL Studio to create some tunes. I usually compose either electronic dance music
-      (EDM) or video game music (VGM), but you know what, I'm always up for a bit of musical experimentation, so I like
-      to try out other genres from time to time. Additionally, if you're looking to create your own website, don't hesitate 
-      to reach out to me, I can help you design and build one for you. Whether if it's a tool or a website showcase your work 
-      or interests, I got you. Feel free to check out my work or contact me through the social media links below!</p>
-  </div>
+    <div class="buttons-container">
+      <a
+        class="button button-youtube"
+        href="https://www.youtube.com/@Mystifyre"
+        target="_blank"
+        title="Visit my YouTube channel!"
+        ><img alt="YouTube logo" src="logos/youtube.png"/></a>
+      <a
+        class="button button-soundcloud"
+        href="https://soundcloud.com/mystifyre"
+        target="_blank"
+        title="My SoundCloud where I post all of my good tracks."
+        ><img alt="Soundcloud logo" src="logos/soundcloud.png"/></a>
+      <a
+        class="button button-newgrounds"
+        href="https://mystifyre.newgrounds.com"
+        target="_blank"
+        title="Visit my Newgrounds profile!"
+        ><img alt="Newgrounds logo" src="logos/newgrounds.png"/></a>
+      <a
+        class="button button-github"
+        href="https://github.com/MystifyreMusic"
+        target="_blank"
+        title="Where I program all of my websites and games."
+        ><img alt="GitHub logo" src="logos/github.png"/></a>
+      <a
+        class="button button-discord"
+        href="https://discordapp.com/users/429750104262705160/"
+        target="_blank"
+        title="Add me on Discord. (Best way to contact me.)"
+        ><img alt="Discord logo" src="logos/discord.png"/></a>
+      <a
+        class="button button-discordserver"
+        href="https://discord.gg/KrwxnbUqGj"
+        target="_blank"
+        title="Join my Discord Server!"
+        ><img alt="Discord Server logo" src="logos/CosmicLounge.png"/></a>
+      <a
+        class="button button-twitter"
+        href="https://www.reddit.com/user/MystifyreMusic"
+        target="_blank"
+        title="My Reddit profile."
+        ><img alt="Reddit logo" src="logos/reddit.png"/></a>
+      <a
+        class="button button-twitter"
+        href="https://twitter.com/MystifyreMusic"
+        target="_blank"
+        title="My Twitter where I rarely post things."
+        ><img alt="Twitter logo" src="logos/twitter.png"/></a>
+      <a
+        class="button button-steam"
+        href="https://steamcommunity.com/id/MystifyreMusic/"
+        target="_blank"
+        title="Add me on Steam if I know you."
+        ><img alt="Steam logo" src="logos/steam.png"/></a>
+      <a
+        class="button button-chess"
+        href="https://www.chess.com/member/mystifyre"
+        target="_blank"
+        title="My Chess.com account so you can see how shitty I am lol."
+        ><img alt="Chess.com logo" src="logos/chess.png"/></a>
+    </div>
 
-  <div class="separator" alt="separator">
-    <img src="mystifyre/separator.png">
-  </div>
+    <div alt="separator" class="separator"><img src="mystifyre/separator.png"/></div>
 
-  <div class="buttons-container">
-    <a href="https://www.youtube.com/@Mystifyre" class="button button-youtube" target="_blank"
-      title="Visit my YouTube channel!">
-      <img src="logos/youtube.png" alt="YouTube logo">
-    </a>
-    <a href="https://soundcloud.com/mystifyre" class="button button-soundcloud" target="_blank"
-      title="My SoundCloud where I post all of my good tracks.">
-      <img src="logos/soundcloud.png" alt="Soundcloud logo">
-    </a>
-    <a href="https://mystifyre.newgrounds.com" class="button button-newgrounds" target="_blank"
-      title="Visit my Newgrounds profile!">
-      <img src="logos/newgrounds.png" alt="Newgrounds logo">
-    </a>
-    <a href="https://github.com/MystifyreMusic" class="button button-github" target="_blank"
-      title="Where I program all of my websites and games.">
-      <img src="logos/github.png" alt="GitHub logo">
-    </a>
-    <a href="https://discordapp.com/users/429750104262705160/" class="button button-discord" target="_blank"
-      title="Add me on Discord. (Best way to contact me.)">
-      <img src="logos/discord.png" alt="Discord logo">
-    </a>
-    <a href="https://discord.gg/KrwxnbUqGj" class="button button-discordserver" target="_blank"
-      title="Join my Discord Server!">
-      <img src="logos/CosmicLounge.png" alt="Discord Server logo">
-    </a>
-    <a href="https://www.reddit.com/user/MystifyreMusic" class="button button-twitter" target="_blank"
-      title="My Reddit profile.">
-      <img src="logos/reddit.png" alt="Reddit logo">
-    </a>
-    <a href="https://twitter.com/MystifyreMusic" class="button button-twitter" target="_blank"
-      title="My Twitter where I rarely post things.">
-      <img src="logos/twitter.png" alt="Twitter logo">
-    </a>
-    <a href="https://steamcommunity.com/id/MystifyreMusic/" class="button button-steam" target="_blank"
-      title="Add me on Steam if I know you.">
-      <img src="logos/steam.png" alt="Steam logo">
-    </a>
-    <a href="https://www.chess.com/member/mystifyre" class="button button-chess" target="_blank"
-      title="My Chess.com account so you can see how shitty I am lol.">
-      <img src="logos/chess.png" alt="Chess.com logo">
-    </a>
-  </div>
-
-  <div class="separator" alt="separator">
-    <img src="mystifyre/separator.png">
-  </div>
-
-  <div>
-    <h2 class="header">Coming Soon</h2>
-    <p class="text">Stay tuned for some exciting new music coming your way! Here's a sneak peek of what's in store:</p>
-  </div>
-
-  <div class="coming-soon">
-    <div class="track">
-      <h2 class="track-name">Game2Win</h2>
-      <audio controls>
-          <source src="audio/Game2Win.ogg" type="audio/ogg">
+    <div>
+      <h2 class="header">Coming Soon</h2>
+      <p class="text">
+        Stay tuned for some exciting new music coming your way! Here's a sneak
+        peek of what's in store:
+      </p>
+    </div>
+    <div class="coming-soon">
+      <div class="track">
+        <h2 class="track-name">Game2Win</h2>
+        <audio controls="">
+          <source src="audio/Game2Win.ogg" type="audio/ogg"/>
           Your browser does not support the audio element.
-      </audio>
-  </div>
-    <div class="track">
+        </audio>
+      </div>
+      <div class="track">
         <h2 class="track-name">RFYL Remix (Remastered)</h2>
-        <audio controls>
-            <source src="audio/RFYL Remix Remastered.ogg" type="audio/ogg">
-            Your browser does not support the audio element.
+        <audio controls="">
+          <source src="audio/RFYL Remix Remastered.ogg" type="audio/ogg"/>
+          Your browser does not support the audio element.
         </audio>
-    </div>
-    <div class="track">
+      </div>
+      <div class="track">
         <h2 class="track-name">Jump City (Remastered)</h2>
-        <audio controls>
-            <source src="audio/Jump City Remastered.ogg" type="audio/ogg">
-            Your browser does not support the audio element.
+        <audio controls="">
+          <source src="audio/Jump City Remastered.ogg" type="audio/ogg"/>
+          Your browser does not support the audio element.
         </audio>
-    </div>
-    <div class="track">
+      </div>
+      <div class="track">
         <h2 class="track-name">Mystic Ignition</h2>
-        <audio controls>
-            <source src="audio/Mystic Ignition.ogg" type="audio/ogg">
-            Your browser does not support the audio element.
+        <audio controls="">
+          <source src="audio/Mystic Ignition.ogg" type="audio/ogg"/>
+          Your browser does not support the audio element.
         </audio>
-    </div>
-    <div class="track">
+      </div>
+      <div class="track">
         <h2 class="track-name">Musical Prayer</h2>
-        <audio controls>
-            <source src="audio/Musical Prayer.ogg" type="audio/ogg">
-            Your browser does not support the audio element.
+        <audio controls="">
+          <source src="audio/Musical Prayer.ogg" type="audio/ogg"/>
+          Your browser does not support the audio element.
         </audio>
+      </div>
     </div>
-  </div>
 
-  <div class="separator" alt="separator">
-    <img src="mystifyre/separator.png">
-  </div>
+    <div alt="separator" class="separator"><img src="mystifyre/separator.png"/></div>
 
-  <iframe width="800" height="500" src="https://www.youtube.com/embed/gFiT-gZGwRg" frameborder="0"
-      allowfullscreen></iframe>
+    <iframe
+      allowfullscreen=""
+      frameborder="0"
+      height="500"
+      src="https://www.youtube.com/embed/gFiT-gZGwRg"
+      width="800">
+    </iframe>
 
-  <div class="separator" alt="separator">
-    <img src="mystifyre/separator.png">
-  </div>
+    <div alt="separator" class="separator"><img src="mystifyre/separator.png"/></div>
 
-  <iframe width="800" height="300" scrolling="no" frameborder="no" allow="autoplay"
-    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1527731584&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-  <div
-    style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-    <a href="https://soundcloud.com/mystifyre" title="Mystifyre" target="_blank"
-      style="color: #cccccc; text-decoration: none;">Mystifyre</a> · <a
-      href="https://soundcloud.com/mystifyre/exploring-the-universe" title="Exploring The Universe" target="_blank"
-      style="color: #cccccc; text-decoration: none;">Exploring The Universe</a>
-  </div>
+    <iframe
+      allow="autoplay"
+      frameborder="no"
+      height="300"
+      scrolling="no"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1527731584&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"
+      width="800">
+    </iframe>
+    <div
+      style="
+        font-size: 10px;
+        color: #cccccc;
+        line-break: anywhere;
+        word-break: normal;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans,
+          Garuda, Verdana, Tahoma, sans-serif;
+        font-weight: 100;">
+      <a
+        href="https://soundcloud.com/mystifyre"
+        style="color: #cccccc; text-decoration: none"
+        target="_blank"
+        title="Mystifyre"
+        >Mystifyre</a>
+      ·
+      <a
+        href="https://soundcloud.com/mystifyre/exploring-the-universe"
+        style="color: #cccccc; text-decoration: none"
+        target="_blank"
+        title="Exploring The Universe"
+        >Exploring The Universe</a>
+    </div>
 
-  <div class="separator" alt="separator">
-    <img src="mystifyre/separator.png">
-  </div>
+    <div alt="separator" class="separator"><img src="mystifyre/separator.png"/></div>
 
-  <div class="background">
-    <img src="mystifyre/background.png" alt="Background">
-  </div>
-</body>
-
+    <div class="background">
+      <img alt="Background" src="mystifyre/background.png"/>
+    </div>
+  </body>
 </html>
