@@ -3,185 +3,13 @@
 
 <head>
 	<title>Vystel</title>
-	<link href="Vystel/logo.ico" rel="shortcut icon" type="image/x-icon" />
+	<link href="Vystel/icon.ico" rel="shortcut icon" type="image/x-icon" />
 	<meta content="Vystel's Website" property="og:title" />
-	<meta content="A personal web page for a musician named Vystel, featuring information about their music and links to various social media platforms." property="og:description" />
+	<meta content="Vystel's personal web page, featuring information about their music and links to various social media platforms." property="og:description" />
 	<meta content="https://i.ibb.co/17Txqhy/7.png" property="og:image" />
 	<meta content="https://Vystelmusic.github.io/website/" property="og:url" />
 	<meta content="website" property="og:type" />
-	<style>
-	@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
-
-	body {
-		margin: 0;
-		background-color: #000;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-	}
-
-	.background {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: -1;
-	}
-
-	.background img {
-		position: relative;
-		display: inline-block;
-		overflow: hidden;
-		width: 100vw;
-		height: 100vh;
-	}
-
-	.container {
-		width: 800px;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: left;
-		text-align: left;
-		padding: 20px;
-		color: #ca9afe;
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
-
-	.separator {
-		width: 800px;
-		align-items: center;
-		margin-top: 20px;
-		margin-bottom: 20px;
-	}
-
-	.logo {
-		width: 167px;
-		height: 167px;
-	}
-
-	.pfp {
-		width: 200px;
-		height: 200px;
-		border-radius: 20px;
-	}
-
-	.header {
-		font-size: 24px;
-		margin-top: 10px;
-	}
-
-	.text {
-		margin-top: 20px;
-		font-size: 18px;
-		font-family: "Roboto Condensed", sans-serif;
-		color: #ca9afe;
-	}
-
-	.container>img {
-		margin-right: 40px;
-	}
-
-	.buttons-container {
-		width: 900px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
-		margin-top: 10px;
-	}
-
-	.button {
-		display: block;
-		margin: 40px;
-		width: 120px;
-		height: 120px;
-		color: #ca9afe;
-		border: 5px solid;
-		border-radius: 20px;
-		background-color: rgba(0, 0, 0, 100);
-		transition: all 0.2s ease-in-out;
-		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-	}
-
-	.button:hover {
-		transform: scale(1.1);
-		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-		background-color: rgba(0, 0, 0, 0.75);
-		filter: drop-shadow(0px 0px 5px #ca9afe);
-	}
-
-	.button img {
-		display: block;
-		margin: 0 auto;
-		margin-top: 12px;
-		max-width: 80%;
-		max-height: 80%;
-	}
-
-	.coming-soon {
-		background-color: transparent;
-		padding: 0px;
-		margin: -5px 0;
-	}
-
-	.header {
-		color: #ca9afe;
-		font-size: 24px;
-		text-align: center;
-		font-family: "Roboto Condensed", sans-serif;
-	}
-
-	.track-name {
-		color: #ca9afe;
-		font-size: 20px;
-		text-align: center;
-		font-family: "Roboto Condensed", sans-serif;
-	}
-
-	.coming-soon p {
-		text-align: center;
-	}
-
-	audio {
-		display: block;
-		margin: 10px auto;
-		background-color: #000;
-		border: 5px solid #ca9afe;
-		border-radius: 30px;
-		padding: 5px;
-	}
-
-	audio::-webkit-media-controls-enclosure {
-		border-radius: 5px;
-		background-color: #000;
-	}
-
-	audio::-webkit-media-controls-play-button,
-	audio::-webkit-media-controls-mute-button {
-		background-color: #ca9afe;
-		color: #fff;
-		border-radius: 50%;
-		padding: 5px;
-	}
-
-	audio::-webkit-media-controls-current-time-display,
-	audio::-webkit-media-controls-time-remaining-display,
-	audio::-webkit-media-controls-timeline {
-		color: #ca9afe;
-	}
-
-	.track {
-		padding: 5px;
-	}
-
-	audio::-webkit-media-controls-timeline {
-		color: #ca9afe;
-	}
-	</style>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -190,47 +18,30 @@
 	</div>
 	<div class="container">
 		<img alt="Profile Picture" class="pfp" src="Vystel/pfp.png" />
-		<p class="text"> Welcome to my website! I’m Vystel, an aspiring 16 y/o music producer. I write music in various EDM subgenres, as well as orchestral pieces and indie game soundtracks. Contact me or check out my work below!</p>
+		<p class="text"> Welcome to my website, I'm Vystel, a music producer for indie games. Check out my work or contact me for commission info below.</p>
 	</div>
 	<div alt="separator" class="separator"><img src="Vystel/separator.png" /></div>
 	<div class="buttons-container">
-		
-		<a class="button button-youtube" 
-		   href="https://www.youtube.com/@Mystifyre" target="_blank" 
-		   title="Visit my YouTube channel!"><img alt="YouTube logo" src="logos/youtube.png" /></a>
-		
-		<a class="button button-soundcloud" 
-		   href="https://soundcloud.com/vystelmusic" target="_blank" 
-		   title="My SoundCloud where I post all of my good tracks."><img alt="Soundcloud logo" src="logos/soundcloud.png" /></a>
-		
-		<a class="button button-newgrounds" 
-		   href="https://Mystifyre.newgrounds.com" target="_blank" 
-		   title="Visit my Newgrounds profile!"><img alt="Newgrounds logo" src="logos/newgrounds.png" /></a>
-		
-		<a class="button button-github" 
-		   href="https://github.com/Vystel" target="_blank" 
-		   title="Where I program all of my websites and games."><img alt="GitHub logo" src="logos/github.png" /></a>
-		
-		<a class="button button-discord" 
-		   href="https://discordapp.com/users/429750104262705160/" target="_blank" 
-		   title="Add me on Discord. (Best way to contact me.)"><img alt="Discord logo" src="logos/discord.png" /></a>
-		
-		<a class="button button-reddit" 
-		   href="https://www.reddit.com/user/MystifyreMusic" target="_blank" 
-		   title="My Reddit profile."><img alt="Reddit logo" src="logos/reddit.png" /></a>
-		
-		<a class="button button-twitter" 
-		   href="https://twitter.com/Vystel_" target="_blank" 
-		   title="My Twitter profile."><img alt="Twitter logo" src="logos/twitter.png" /></a>
-		
-		<a class="button button-steam" 
-		   href="https://steamcommunity.com/id/ItzVystel/" target="_blank" 
-		   title="Add me on Steam if I know you."><img alt="Steam logo" src="logos/steam.png" /></a>
+		<a class="button button-youtube" href="https://www.youtube.com/@Mystifyre" target="_blank"><img src="logos/youtube.png"/></a>
+		<a class="button button-soundcloud" href="https://soundcloud.com/vystelmusic" target="_blank"><img src="logos/soundcloud.png"/></a>
+		<a class="button button-newgrounds" href="https://Mystifyre.newgrounds.com" target="_blank"><img src="logos/newgrounds.png"/></a>
+		<a class="button button-github" href="https://github.com/Vystel" target="_blank"><img src="logos/github.png"/></a>
+		<a class="button button-discord" href="https://discordapp.com/users/429750104262705160/" target="_blank"><img src="logos/discord.png"/></a>
+		<a class="button button-reddit" href="https://www.reddit.com/user/MystifyreMusic" target="_blank"><img src="logos/reddit.png"/></a>
+		<a class="button button-twitter" href="https://twitter.com/Vystel_" target="_blank"><img src="logos/twitter.png"/></a>
+		<a class="button button-steam" href="https://steamcommunity.com/id/ItzVystel/" target="_blank"><img src="logos/steam.png"/></a>		   
 	</div>
+	<div alt="separator" class="separator"><img src="Vystel/separator.png" /></div>
+	<iframe allowfullscreen="" frameborder="0" height="500" src="https://www.youtube.com/embed/oZE-qbGr-9A" width="800">
+	</iframe>
+	<div alt="separator" class="separator"><img src="Vystel/separator.png" /></div>
+	<iframe width="800" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1866657315&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/vystelmusic" title="Vystel" target="_blank" style="color: #cccccc; text-decoration: none;">Vystel</a> · <a href="https://soundcloud.com/vystelmusic/luminosity" title="Luminosity" target="_blank" style="color: #cccccc; text-decoration: none;">Luminosity</a></div>
+	</iframe>
+	<!--
 	<div alt="separator" class="separator"><img src="Vystel/separator.png" /></div>
 	<div>
 		<h2 class="header">Coming Soon</h2>
-		<p class="text"> Stay tuned for some exciting new music coming your way! Here's a sneak peek of what's in store: </p>
+		<p class="text"> Tracks that are in the works and might be releasing on my platforms soon. </p>
 	</div>
 	<div class="coming-soon">
 		<div class="track">
@@ -249,26 +60,7 @@
 				<source src="audio/In the Zone.ogg" type="audio/ogg" /> Your browser does not support the audio element. </audio>
 		</div>
 	</div>
-	<div alt="separator" class="separator"><img src="Vystel/separator.png" /></div>
-	<iframe allowfullscreen="" frameborder="0" height="500" src="https://www.youtube.com/embed/gFiT-gZGwRg" width="800">
-	</iframe>
-	<div alt="separator" class="separator"><img src="Vystel/separator.png" /></div>
-	<iframe allow="autoplay" frameborder="no" height="300" scrolling="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1527731584&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true" width="800">
-	</iframe>
-	<div style="
-        font-size: 10px;
-        color: #cccccc;
-        line-break: anywhere;
-        word-break: normal;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans,
-          Garuda, Verdana, Tahoma, sans-serif;
-        font-weight: 100;">
-		<a href="https://soundcloud.com/Vystel" style="color: #cccccc; text-decoration: none" target="_blank" title="Vystel">Vystel</a> · <a href="https://soundcloud.com/Vystel/exploring-the-universe" style="color: #cccccc; text-decoration: none" target="_blank" title="Exploring The Universe">Exploring The Universe</a>
-	</div>
-	<div alt="separator" class="separator"><img src="Vystel/separator.png" /></div>
+	-->
 	<div class="background">
 		<img alt="Background" src="Vystel/background.png" />
 	</div>
